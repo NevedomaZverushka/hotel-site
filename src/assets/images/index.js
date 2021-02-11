@@ -13,10 +13,11 @@ import firstFloor from './1-floor.png';
 import secondFloor from './2-floor.png';
 import banner from './banner.png';
 import heart from './heart.svg';
+import map from './map.png';
 
 export {
     profile,
     bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowRight, heart,
     firstFloor, secondFloor,
-    banner
+    banner, map
 };

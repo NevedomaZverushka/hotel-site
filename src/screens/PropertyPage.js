@@ -1,9 +1,9 @@
 import React from 'react';
-import { Card, Banner } from "../components";
+import { Card, Banner, Map } from "../components";
 import {
     profile,
     bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowRight,
-    firstFloor, secondFloor,
+    firstFloor, secondFloor, map,
 } from '../assets/images';
 
 const services = [
@@ -124,6 +124,8 @@ export default function PropertyPage() {
                 </Card>
 
             </div>
+
+            <Map />
         </div>
     )
 }

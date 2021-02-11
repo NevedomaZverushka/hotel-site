@@ -9,7 +9,7 @@
   align-items: stretch;
   justify-content: space-between;
 
-  h1, h2, h3, h4, p, span, button {
+  h1, h3, h4, p, span, button {
     margin: 0;
     padding-bottom: 1.25rem;
     font-size: 1.5rem;
@@ -19,12 +19,6 @@
   }
   h1 {
     font-family: "Lato-Black", serif;
-  }
-  h2, button {
-    font-size: 1.125rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0;
   }
   h3 {
     color: $grey;
@@ -63,6 +57,8 @@
     font-weight: normal;
     cursor: pointer;
     flex: 1;
+    font-size: 1.125rem;
+    text-transform: uppercase;
   }
   .arrow {
     background-color: $white;

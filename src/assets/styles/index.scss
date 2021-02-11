@@ -2,6 +2,7 @@
 
 @import 'components/Card';
 @import 'components/Banner';
+@import 'components/Map';
 
 @import 'screens/PropertyPage';
 
@@ -20,6 +21,15 @@ body {
 .column {
   display: flex;
   flex-direction: column;
+}
+h2 {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 1.25rem;
+  color: $dark-blue;
+  font-family: "Lato-Regular", serif;
 }
 
 //.wrap {
