@@ -1,9 +1,9 @@
 import React from 'react';
-import { Card } from "../components";
+import { Card, Banner } from "../components";
 import {
     profile,
     bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowRight,
-    firstFloor, secondFloor
+    firstFloor, secondFloor,
 } from '../assets/images';
 
 const services = [
@@ -30,7 +30,11 @@ const floors = [
 export default function PropertyPage() {
     return(
         <div className="page">
+
+            <Banner />
+
             <div className="container">
+
                 <Card style={{ flex: 2, flexBasis: '20rem' }}>
                     <h1>Family village</h1>
                     <h3>Observatoire</h3>
@@ -48,6 +52,7 @@ export default function PropertyPage() {
                         Typically Istrian in style, Ventura has been brought up to a lovely modern standard from its 150 year old foundations. The rustic house features light and fresh décor, with comfortable and tasteful furnishings. The open plan ground floor leads out to your very own private swimming pool, surrounded by a large sun terrace area which is the perfect place for time spent relaxing in the sun. An inviting covered summer barbeque house can also be found overlooking the pool for you to make the most of outdoor living on your Croatian holiday. Take a five minute drive through the beautiful countryside perfumed with lavender, to the closest town of Sveti Lorec for all of your amenities and be sure to visit the coastal resorts of Vsar, Rovinj, Porec and Pula for further exploring and lovely days out.
                     </p>
                 </Card>
+
                 <Card title={"Contact"} style={{ gap: '1.5rem', flexBasis: '12rem' }}>
                     <div className="row" style={{ gap: '1rem' }}>
                         <div className="avatar" style={{ backgroundImage: `url(${profile})` }} />
@@ -64,12 +69,14 @@ export default function PropertyPage() {
                         <button>Contact</button>
                     </div>
                 </Card>
+
                 <Card style={{ flex: '2 100%' }} title={"Availability"} />
+
                 <Card style={{ flex: 2, flexBasis: '20rem' }} title={"Details"}>
                     <div className="row" style={{ gap: '1.8rem' , marginTop: '1.8rem'}}>
                         {details.map(({ id, title, items }) => {
                             return(
-                                <div className="row" style={{ width: '100%', gap: '1rem' }}>
+                                <div key={id} className="row" style={{ width: '100%', gap: '1rem' }}>
                                     <h4 style={{ flex: 1 }}>{title}</h4>
                                     <p style={{ columnCount: 2, flex: 2 }}>
                                         {items.map((item, idx) => { return <span key={idx}>{item}<br/></span> })}
@@ -79,6 +86,7 @@ export default function PropertyPage() {
                         })}
                     </div>
                 </Card>
+
                 <Card title={"Reviews"} style={{ gap: '1.5rem', flexBasis: '12rem', justifyContent: 'space-between' }}>
                     <div className="row" style={{ gap: '1rem' }}>
                         <div className="avatar" style={{ backgroundImage: `url(${profile})` }} />
@@ -101,6 +109,7 @@ export default function PropertyPage() {
                         <button className="arrow" style={{ backgroundImage: `url(${arrowRight})` }} />
                     </div>
                 </Card>
+
                 <Card style={{ flex: '2 100%' }} title={"Floor plan"}>
                     <div className="row" style={{ gap: '2rem', marginTop: '2rem' }}>
                         {floors.map(({ id, image, title }) => {
@@ -113,6 +122,7 @@ export default function PropertyPage() {
                         })}
                     </div>
                 </Card>
+
             </div>
         </div>
     )

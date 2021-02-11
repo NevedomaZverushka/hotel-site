@@ -11,9 +11,12 @@ import arrowLeft from './chevron-left.svg';
 import arrowRight from './chevron-right.svg';
 import firstFloor from './1-floor.png';
 import secondFloor from './2-floor.png';
+import banner from './banner.png';
+import heart from './heart.svg';
 
 export {
     profile,
-    bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowRight,
-    firstFloor, secondFloor
+    bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowRight, heart,
+    firstFloor, secondFloor,
+    banner
 };
