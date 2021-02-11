@@ -2,6 +2,9 @@
 
 @media screen and (max-device-width: 425px) {
   .container {
+    padding: 1.5rem 10% !important;
+  }
+  .container_2 {
     margin: 1.5rem 10% !important;
   }
 }
@@ -11,11 +14,17 @@
   flex-direction: column;
   align-items: center;
 
-  .container {
+  .container, .container_2 {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 1.5rem 20%;
+    padding: 1.5rem 20%;
+    background-color: $light-grey;
+  }
+  .container_2 {
+    background-color: $white;
+    margin: 1.5rem 25%;
+    padding: 0;
   }
 }

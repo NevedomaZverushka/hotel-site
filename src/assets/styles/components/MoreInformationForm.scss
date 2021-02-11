@@ -1,0 +1,17 @@
+@import 'src/assets/styles/colors';
+
+.information_title {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+input {
+  display: flex;
+  flex: 2;
+  flex-basis: 15rem;
+  height: 3rem;
+  border: 1px $grey solid;
+}
+button {
+  flex: 1;
+}
