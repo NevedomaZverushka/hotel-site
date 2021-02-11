@@ -48,7 +48,7 @@ export default function PropertyPage() {
                         Typically Istrian in style, Ventura has been brought up to a lovely modern standard from its 150 year old foundations. The rustic house features light and fresh décor, with comfortable and tasteful furnishings. The open plan ground floor leads out to your very own private swimming pool, surrounded by a large sun terrace area which is the perfect place for time spent relaxing in the sun. An inviting covered summer barbeque house can also be found overlooking the pool for you to make the most of outdoor living on your Croatian holiday. Take a five minute drive through the beautiful countryside perfumed with lavender, to the closest town of Sveti Lorec for all of your amenities and be sure to visit the coastal resorts of Vsar, Rovinj, Porec and Pula for further exploring and lovely days out.
                     </p>
                 </Card>
-                <Card title={"Contact"} style={{ gap: '1.5rem', flexBasis: '12rem', justifyContent: 'space-between' }}>
+                <Card title={"Contact"} style={{ gap: '1.5rem', flexBasis: '12rem' }}>
                     <div className="row" style={{ gap: '1rem' }}>
                         <div className="avatar" style={{ backgroundImage: `url(${profile})` }} />
                         <div className="column" style={{ gap: '0.8rem' }}>
