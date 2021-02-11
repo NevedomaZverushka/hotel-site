@@ -31,7 +31,7 @@ export default function PropertyPage() {
     return(
         <div className="page">
             <div className="container">
-                <Card style={{ flex: 2 }}>
+                <Card style={{ flex: 2, flexBasis: '20rem' }}>
                     <h1>Family village</h1>
                     <h3>Observatoire</h3>
                     <div className="row" style={{ gap: '1.5rem', paddingBottom: '1rem' }}>
@@ -48,7 +48,7 @@ export default function PropertyPage() {
                         Typically Istrian in style, Ventura has been brought up to a lovely modern standard from its 150 year old foundations. The rustic house features light and fresh décor, with comfortable and tasteful furnishings. The open plan ground floor leads out to your very own private swimming pool, surrounded by a large sun terrace area which is the perfect place for time spent relaxing in the sun. An inviting covered summer barbeque house can also be found overlooking the pool for you to make the most of outdoor living on your Croatian holiday. Take a five minute drive through the beautiful countryside perfumed with lavender, to the closest town of Sveti Lorec for all of your amenities and be sure to visit the coastal resorts of Vsar, Rovinj, Porec and Pula for further exploring and lovely days out.
                     </p>
                 </Card>
-                <Card title={"Contact"} style={{ gap: '1.5rem' }}>
+                <Card title={"Contact"} style={{ gap: '1.5rem', flexBasis: '12rem', justifyContent: 'space-between' }}>
                     <div className="row" style={{ gap: '1rem' }}>
                         <div className="avatar" style={{ backgroundImage: `url(${profile})` }} />
                         <div className="column" style={{ gap: '0.8rem' }}>
@@ -65,21 +65,21 @@ export default function PropertyPage() {
                     </div>
                 </Card>
                 <Card style={{ flex: '2 100%' }} title={"Availability"} />
-                <Card style={{ flex: 2 }} title={"Details"}>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.8rem', marginTop: '1.8rem' }}>
+                <Card style={{ flex: 2, flexBasis: '20rem' }} title={"Details"}>
+                    <div className="row" style={{ gap: '1.8rem' , marginTop: '1.8rem'}}>
                         {details.map(({ id, title, items }) => {
                             return(
-                                <div key={id} style={{ display: 'flex', flexWrap: 'wrap' }}>
+                                <div className="row" style={{ width: '100%', gap: '1rem' }}>
                                     <h4 style={{ flex: 1 }}>{title}</h4>
                                     <p style={{ columnCount: 2, flex: 2 }}>
-                                        {items.map(item => { return <span>{item}<br/></span> })}
+                                        {items.map((item, idx) => { return <span key={idx}>{item}<br/></span> })}
                                     </p>
                                 </div>
                             )
                         })}
                     </div>
                 </Card>
-                <Card title={"Reviews"} style={{ gap: '1.5rem' }}>
+                <Card title={"Reviews"} style={{ gap: '1.5rem', flexBasis: '12rem', justifyContent: 'space-between' }}>
                     <div className="row" style={{ gap: '1rem' }}>
                         <div className="avatar" style={{ backgroundImage: `url(${profile})` }} />
                         <div className="column" style={{ gap: '0.8rem' }}>

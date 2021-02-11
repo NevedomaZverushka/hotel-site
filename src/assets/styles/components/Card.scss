@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: space-between;
 
   h1, h2, h3, h4, p, span, button {
     margin: 0;
@@ -25,6 +24,7 @@
     text-transform: uppercase;
     font-weight: bold;
     padding: 0;
+    flex: 1;
   }
   h3 {
     color: $grey;
@@ -50,8 +50,8 @@
   }
   .avatar {
     border-radius: 50%;
-    width: 90px;
-    height: 90px;
+    width: 85px;
+    height: 85px;
     background-size: cover;
     background-position: center;
   }
@@ -61,7 +61,6 @@
     color: $white;
     padding: 0.875rem 1.25rem;
     font-weight: normal;
-    flex: 1;
     cursor: pointer;
   }
   .arrow {
