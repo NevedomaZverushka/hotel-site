@@ -1,0 +1,43 @@
+@import 'src/assets/styles/colors';
+
+.footer {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  background-color: $dark-blue;
+  padding: 3rem 20%;
+  align-items: stretch;
+  gap: 2rem;
+
+  .block {
+    flex: 1;
+    gap: 0.6rem;
+
+    span {
+      color: $light-grey;
+      flex: 1;
+      text-align: right;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    .icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+    }
+    h3 {
+      padding: 0;
+      color: $light-grey;
+      font-family: "Lato-Light", serif;
+      text-transform: uppercase;
+    }
+  }
+  .block:last-child {
+    flex: 1 100%;
+    align-items: center;
+    gap: 1rem;
+  }
+}

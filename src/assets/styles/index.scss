@@ -4,6 +4,7 @@
 @import 'components/Banner';
 @import 'components/Map';
 @import 'components/MoreInformationForm';
+@import 'components/Footer';
 
 @import 'screens/PropertyPage';
 
@@ -23,11 +24,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-h1, h2, h3, h4, p, span, button {
+h1, h2, h3, h4, p, span, button, a {
   margin: 0;
   padding-bottom: 1.25rem;
   font-size: 1.5rem;
-  color: $dark-blue;
+  color: $blue;
   font-family: "Lato-Regular", serif;
   font-weight: normal;
 }
@@ -48,14 +49,14 @@ h4 {
   font-size: 1.05rem;
   padding: 0;
 }
-p, span {
+p, span, a {
   color: $grey;
   font-size: 1rem;
   font-family: "Lato-Light", serif;
   text-align: justify;
   padding: 0;
 }
-span {
+span, a {
   font-size: 0.875rem;
 }
 button {
@@ -68,6 +69,14 @@ button {
   flex: 1;
   font-size: 1.125rem;
   text-transform: uppercase;
+}
+a {
+  color: $light-grey;
+  text-decoration: none;
+}
+a:hover {
+  color: $white;
+  font-weight: bold;
 }
 
 @font-face {

@@ -14,10 +14,17 @@ import secondFloor from './2-floor.png';
 import banner from './banner.png';
 import heart from './heart.svg';
 import map from './map.png';
+import facebook from './facebook.svg';
+import google from './google.svg';
+import instagram from './instagram.svg';
+import twitter from './twitter.svg';
+import logo from './logo.png';
 
 export {
     profile,
     bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowRight, heart,
     firstFloor, secondFloor,
-    banner, map
+    banner, map,
+    facebook, google, instagram, twitter,
+    logo
 };
