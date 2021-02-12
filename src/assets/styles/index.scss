@@ -5,6 +5,7 @@
 @import 'components/Map';
 @import 'components/MoreInformationForm';
 @import 'components/Footer';
+@import 'components/Header';
 
 @import 'screens/PropertyPage';
 
@@ -77,6 +78,7 @@ a {
 a:hover {
   color: $white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 @font-face {

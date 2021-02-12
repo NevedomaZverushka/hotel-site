@@ -1,0 +1,56 @@
+@import 'src/assets/styles/colors';
+
+@media screen and (max-device-width: 425px) {
+  .wrap {
+    padding: 1rem 10% !important;
+  }
+}
+
+.header {
+  width: 100%;
+  height: fit-content;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  .wrap {
+    padding: 1rem 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .row {
+      align-items: center;
+      gap: 1rem;
+
+      h3 {
+        padding: 0;
+        color: $light-grey;
+        font-family: "Lato-Light", serif;
+        text-transform: uppercase;
+      }
+    }
+    a {
+      font-size: 1.025rem;
+    }
+    .btn {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.dropdown {
+  background-color: rgba($dark-blue, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+
+  a {
+    padding: 2rem 0;
+    font-size: 1.4rem;
+  }
+}
