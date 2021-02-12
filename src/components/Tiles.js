@@ -73,11 +73,13 @@ export default function Tiles() {
 
             <Card style={{ flex: '2 100%' }} title={"Availability"}>
                 <div className="row" style={{ gap: "3.5rem", flexWrap: "wrap-reverse", justifyContent: "center", padding: "0 1rem" }}>
-                    <div style={{ flex: 2, display: "flex" }}>
-                        <Calendar/>
-                    </div>
-                    <div style={{ flex: 2, display: "flex" }}>
-                        <Calendar/>
+                    <div className="row" style={{ gap: "3.5rem" }}>
+                        <div style={{ flex: 2, display: "flex" }}>
+                            <Calendar/>
+                        </div>
+                        <div style={{ flex: 2, display: "flex" }}>
+                            <Calendar/>
+                        </div>
                     </div>
                     <div style={{ flex: 1, gap: "0.7rem", flexDirection: "column", display: "flex" }}>
                         {availability.map(({id, color, label}) => {
