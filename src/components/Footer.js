@@ -46,12 +46,29 @@ const social = [
     { id: 4, image: twitter, href: '/' },
 ];
 
+const languageOptions = [
+    { value: 'eng', label: 'eng' },
+    { value: 'rus', label: 'rus' },
+    { value: 'ukr', label: 'ukr' },
+];
+
 export default function Footer() {
+    const [language, setLanguage] = React.useState(languageOptions[0]);
+
     return(
         <div className="footer">
-            {/*<div className="block">*/}
-            {/*    <Dropdown/>*/}
-            {/*</div>*/}
+            <div className="block">
+                <Dropdown
+                    items={languageOptions}
+                    item={language}
+                    setItem={setLanguage}
+                />
+                <Dropdown
+                    items={languageOptions}
+                    item={language}
+                    setItem={setLanguage}
+                />
+            </div>
             {categories.map(({ id, links }) => {
                 return(
                     <div key={id} className="block column">

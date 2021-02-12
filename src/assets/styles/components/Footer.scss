@@ -7,11 +7,12 @@
   background-color: $dark-blue;
   padding: 3rem 20%;
   align-items: stretch;
-  gap: 2rem;
+  gap: 1.5rem;
 
   .block {
     flex: 1;
     gap: 0.6rem;
+    flex-basis: 7rem;
 
     span {
       color: $light-grey;
