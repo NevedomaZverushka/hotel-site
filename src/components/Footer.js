@@ -1,5 +1,5 @@
 import React from 'react';
-import { facebook, google, instagram, twitter, logo } from '../assets/images';
+import { social, logo } from '../assets/images';
 import { Dropdown } from '../components';
 
 const categories = [
@@ -39,11 +39,11 @@ const menu = [
     { id: 2, title: 'Privacy', href: '/' },
     { id: 3, title: 'Terms of use', href: '/' },
 ];
-const social = [
-    { id: 1, image: facebook, href: '/' },
-    { id: 2, image: instagram, href: '/' },
-    { id: 3, image: google, href: '/' },
-    { id: 4, image: twitter, href: '/' },
+const media = [
+    { id: 1, image: social.facebook, href: '/' },
+    { id: 2, image: social.instagram, href: '/' },
+    { id: 3, image: social.google, href: '/' },
+    { id: 4, image: social.twitter, href: '/' },
 ];
 
 const languageOptions = [
@@ -89,7 +89,7 @@ export default function Footer() {
                 <span className="bold">+0 123 456 789</span>
                 <span>mail@mail.com</span>
                 <div className="row" style={{ justifyContent: 'space-between', flex: 1 }}>
-                    {social.map(({ id, image, href }) => {
+                    {media.map(({ id, image, href }) => {
                         return(
                             <a className="icon" key={id} href={href} style={{ backgroundImage: `url(${image})` }} />
                         );

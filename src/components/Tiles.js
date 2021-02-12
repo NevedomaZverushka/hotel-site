@@ -1,26 +1,18 @@
 import React from 'react';
 import {Card} from "./index";
 import {
-    arrowLeft,
-    arrowRight,
-    bathtub,
-    bed,
-    fillStar, firstFloor,
-    man,
-    parking,
-    profile, secondFloor,
-    smoking,
-    star,
-    wifi
+    firstFloor, secondFloor,
+    profile,
+    icons
 } from "../assets/images";
 
 const services = [
-    { id: 1, icon: man, info: 6 },
-    { id: 2, icon: bed, info: 3 },
-    { id: 3, icon: bathtub, info: 2 },
-    { id: 4, icon: parking },
-    { id: 5, icon: wifi },
-    { id: 6, icon: smoking },
+    { id: 1, icon: icons.man, info: 6 },
+    { id: 2, icon: icons.bed, info: 3 },
+    { id: 3, icon: icons.bathtub, info: 2 },
+    { id: 4, icon: icons.parking },
+    { id: 5, icon: icons.wifi },
+    { id: 6, icon: icons.smoking },
 ];
 const details = [
     { id: 1, title: 'Kitchen', items: [ 'Dishwasher', 'Microwave Oven', 'Hob', 'Fridge', 'Dishwasher', 'Microwave Oven', 'Hob', 'Fridge' ] },
@@ -97,10 +89,10 @@ export default function Tiles() {
                         <h4>Marina Marina</h4>
                         <span>23 January 2013</span>
                         <div style={{ display: 'flex', flexDirection: 'row', gap: '0.2rem' }}>
-                            <div className="star" style={{ backgroundImage: `url(${fillStar})` }} />
-                            <div className="star" style={{ backgroundImage: `url(${fillStar})` }} />
-                            <div className="star" style={{ backgroundImage: `url(${fillStar})` }} />
-                            <div className="star" style={{ backgroundImage: `url(${star})` }} />
+                            <div className="star" style={{ backgroundImage: `url(${icons.fillStar})` }} />
+                            <div className="star" style={{ backgroundImage: `url(${icons.fillStar})` }} />
+                            <div className="star" style={{ backgroundImage: `url(${icons.fillStar})` }} />
+                            <div className="star" style={{ backgroundImage: `url(${icons.star})` }} />
                         </div>
                     </div>
                 </div>
@@ -108,8 +100,8 @@ export default function Tiles() {
                     Kate was lovely, we had a great stay. We had our own bathroom and we were provided towels and supplies. The place is cozy and we are happy about our stay.
                 </p>
                 <div className="row" style={{ gap: '1.25rem' }}>
-                    <button className="arrow" style={{ backgroundImage: `url(${arrowLeft})` }} />
-                    <button className="arrow" style={{ backgroundImage: `url(${arrowRight})` }} />
+                    <button className="arrow" style={{ backgroundImage: `url(${icons.arrowLeft})` }} />
+                    <button className="arrow" style={{ backgroundImage: `url(${icons.arrowRight})` }} />
                 </div>
             </Card>
 

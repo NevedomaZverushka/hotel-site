@@ -1,5 +1,5 @@
 import React from 'react';
-import {banner, heart} from "../assets/images";
+import {banner, icons} from "../assets/images";
 
 export default function Banner() {
     return(
@@ -7,7 +7,7 @@ export default function Banner() {
 
             <div className="like">
                 <div className="icon">
-                    <img src={heart} />
+                    <img src={icons.heart} />
                 </div>
             </div>
 
