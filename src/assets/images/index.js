@@ -12,6 +12,7 @@ import arrowLeft from './icons/chevron-left.svg';
 import arrowRight from './icons/chevron-right.svg';
 import banner from './icons/banner.png';
 import heart from './icons/heart.svg';
+import heart_light from './icons/heart-light.svg';
 import shower from './icons/shower.svg';
 
 import facebook from './social/facebook.svg';
@@ -31,7 +32,7 @@ import thirdSlider from './slider-3.png';
 
 import logo from './logo.png';
 
-const icons = { bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowRight, heart, shower};
+const icons = { bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowRight, heart, heart_light, shower};
 const social = { facebook, google, instagram, twitter };
 
 export {

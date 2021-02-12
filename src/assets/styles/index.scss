@@ -1,3 +1,6 @@
+@import 'slick/slick';
+@import 'slick/slick-theme';
+
 @import 'colors';
 
 @import 'components/Card';
@@ -7,6 +10,7 @@
 @import 'components/Footer';
 @import 'components/Header';
 @import 'components/Carousel';
+@import 'components/Slide';
 
 @import 'screens/PropertyPage';
 
@@ -26,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-h1, h2, h3, h4, p, span, button, a {
+h1, h2, h3, h4, h5, p, span, button, a {
   margin: 0;
   padding-bottom: 1.25rem;
   font-size: 1.5rem;
@@ -37,7 +41,7 @@ h1, h2, h3, h4, p, span, button, a {
 h1 {
   font-family: "Lato-Black", serif;
 }
-h2 {
+h2, h5 {
   font-size: 1.125rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -50,6 +54,11 @@ h4 {
   color: $grey;
   font-size: 1.05rem;
   padding: 0;
+}
+h5 {
+  padding: 0;
+  color: $grey;
+  font-size: 1rem;
 }
 p, span, a {
   color: $grey;

@@ -1,14 +1,30 @@
-.carousel {
-  padding: 0 25%;
-  margin: 4rem 0;
+@import 'src/assets/styles/colors';
 
-  h2 {
-    text-align: center;
+@media screen and (max-device-width: 425px) {
+  .carousel {
+    padding: 0 12% !important;
   }
 }
 
-.sample {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+.carousel {
+  padding: 0 22%;
+  margin: 4rem 0;
+
+  .slider {
+    margin: 0 auto;
+  }
+  h2 {
+    text-align: center;
+  }
+  .arrow {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 3rem !important;
+    width: 2rem;
+  }
+  .slick-next:before,
+  .slick-prev:before {
+    content: "";
+  }
 }

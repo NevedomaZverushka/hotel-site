@@ -6,4 +6,5 @@ export const Footer = require('./Footer').default;
 export const Header = require('./Header').default;
 export const Map = require('./Map').default;
 export const MoreInformationForm = require('./MoreInformationForm').default;
+export const Slide = require('./Slide').default;
 export const Tiles = require('./Tiles').default;

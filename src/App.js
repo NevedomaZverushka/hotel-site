@@ -28,6 +28,14 @@ const sliders = [
             { id: 3, label: "shower", count: 2 },
             { id: 4, label: "bathtub", count: 1 },
         ]
+    },
+    {
+        id: 4, image: thirdSlider, title: "Czech Republic", likes: 10,
+        info: [
+            { id: 1, label: "man", count: 4 },
+            { id: 2, label: "bed", count: 2 },
+            { id: 3, label: "bathtub", count: 1 },
+        ]
     }
 ];
 
@@ -38,7 +46,7 @@ function App() {
 
             <PropertyPage />
 
-            {/*<Carousel data={sliders} />*/}
+            <Carousel data={sliders} />
             <MoreInformationForm/>
             <Footer />
         </React.Fragment>
