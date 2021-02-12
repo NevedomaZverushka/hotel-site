@@ -9,7 +9,7 @@ export default function Slide(props) {
             <div className="row title">
                 <h5>{title}</h5>
                 <div className="row">
-                    <img className="icon" src={icons.heart_light} />
+                    <img className="icon" src={icons.heartLight} />
                     <span>{likes}</span>
                 </div>
             </div>

@@ -1,5 +1,10 @@
 @import 'src/assets/styles/colors';
 
+.slick-active {
+  display: flex !important;
+  justify-content: center;
+}
+
 .slide {
   display: flex;
   flex-direction: column;

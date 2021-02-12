@@ -1,4 +1,5 @@
 export const Banner = require('./Banner').default;
+export const Calendar = require('./Calendar').default;
 export const Card = require('./Card').default;
 export const Carousel = require('./Carousel').default;
 export const Dropdown = require('./Dropdown').default;

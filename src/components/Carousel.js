@@ -53,7 +53,7 @@ export default function Carousel(props) {
                 className: 'slider',
                 nextArrow: <NextArrow />,
                 prevArrow: <PrevArrow />,
-                centerMode: true,
+                // centerMode: true,
             }
         );
     }, [width]);

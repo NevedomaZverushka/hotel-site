@@ -10,9 +10,11 @@ import star from './icons/star.svg';
 import fillStar from './icons/star-1.svg';
 import arrowLeft from './icons/chevron-left.svg';
 import arrowRight from './icons/chevron-right.svg';
+import arrowLeftLight from './icons/chevron-left-light.svg';
+import arrowRightLight from './icons/chevron-right-light.svg';
 import banner from './icons/banner.png';
 import heart from './icons/heart.svg';
-import heart_light from './icons/heart-light.svg';
+import heartLight from './icons/heart-light.svg';
 import shower from './icons/shower.svg';
 
 import facebook from './social/facebook.svg';
@@ -32,7 +34,7 @@ import thirdSlider from './slider-3.png';
 
 import logo from './logo.png';
 
-const icons = { bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowRight, heart, heart_light, shower};
+const icons = { bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowLeftLight, arrowRightLight, arrowRight, heart, heartLight, shower};
 const social = { facebook, google, instagram, twitter };
 
 export {

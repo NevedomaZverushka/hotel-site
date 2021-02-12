@@ -1,0 +1,56 @@
+@import 'src/assets/styles/colors';
+
+table {
+  width: 16rem;
+
+  td {
+    width: 2.5rem;
+  }
+}
+
+thead {
+  background-color: $blue;
+
+  td {
+    margin: 0;
+    font-size: 0.9rem;
+    color: $white;
+    font-family: "Lato-Regular", serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 1rem 0;
+
+    button {
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      height: 1.5rem !important;
+      width: 1rem;
+      padding: 0;
+      background-color: $blue !important;
+    }
+  }
+}
+tbody {
+  tr {
+    background-color: $light-grey;
+    td {
+      padding: 0.6rem 0;
+      font-size: 0.875rem;
+      color: $grey;
+      font-family: "Lato-Regular", serif;
+      font-weight: normal;
+    }
+  }
+}
+
+.days {
+  td {
+    font-family: "Lato-Bold", serif;
+    border-bottom: 0.2rem solid $white;
+    color: $blue;
+  }
+}
+td {
+  text-align: center;
+}

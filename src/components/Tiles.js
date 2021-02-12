@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card} from "./index";
+import {Card, Calendar} from "./index";
 import {
     firstFloor, secondFloor,
     profile,
@@ -25,6 +25,12 @@ const floors = [
     { id: 2, title: '2 floor', image: secondFloor },
     { id: 3, title: 'Bedroom', image: firstFloor },
     { id: 4, title: 'Restroom', image: secondFloor }
+];
+const availability = [
+    { id: 1, color: '#1e4f60', label: 'Your choice' },
+    { id: 2, color: '#601e1e', label: 'Booked' },
+    { id: 3, color: '#f5989d', label: 'Reserved' },
+    { id: 4, color: '#ade1e5', label: 'Special offer' },
 ];
 
 export default function Tiles() {
@@ -65,7 +71,26 @@ export default function Tiles() {
                 </div>
             </Card>
 
-            <Card style={{ flex: '2 100%' }} title={"Availability"} />
+            <Card style={{ flex: '2 100%' }} title={"Availability"}>
+                <div className="row" style={{ gap: "3.5rem", flexWrap: "wrap-reverse", justifyContent: "center", padding: "0 1rem" }}>
+                    <div style={{ flex: 2, display: "flex" }}>
+                        <Calendar/>
+                    </div>
+                    <div style={{ flex: 2, display: "flex" }}>
+                        <Calendar/>
+                    </div>
+                    <div style={{ flex: 1, gap: "0.7rem", flexDirection: "column", display: "flex" }}>
+                        {availability.map(({id, color, label}) => {
+                            return(
+                                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "0.8rem" }} key={id}>
+                                    <div className="square" style={{ backgroundColor: color }} />
+                                    <span style={{ color }}>{label}</span>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+            </Card>
 
             <Card style={{ flex: 2, flexBasis: '20rem' }} title={"Details"}>
                 <div className="row" style={{ gap: '1.8rem' , marginTop: '1.8rem'}}>
