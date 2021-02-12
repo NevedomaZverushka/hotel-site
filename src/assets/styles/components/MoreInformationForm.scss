@@ -1,17 +1,29 @@
 @import 'src/assets/styles/colors';
 
-.information_title {
-  display: flex;
-  justify-content: center;
-  flex: 1;
+@media screen and (max-device-width: 425px) {
+  .information_block {
+    padding: 0 10% !important;
+  }
 }
-input {
+
+.information_block {
   display: flex;
-  flex: 2;
-  flex-basis: 15rem;
-  height: 3rem;
-  border: 1px $grey solid;
-}
-button {
-  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 25%;
+  margin-bottom: 5rem;
+
+  h2 {
+    text-align: center;
+  }
+  input {
+    display: flex;
+    flex: 2;
+    height: 3rem;
+    border: 1px $grey solid;
+  }
+  button {
+    flex: 1;
+  }
+
 }

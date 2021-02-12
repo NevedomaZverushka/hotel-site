@@ -1,5 +1,13 @@
 @import 'src/assets/styles/colors';
 
+@media screen and (max-device-width: 425px) {
+  .block {
+    a {
+      text-align: center !important;
+    }
+  }
+}
+
 .footer {
   display: flex;
   flex: 1;

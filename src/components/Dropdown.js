@@ -22,6 +22,10 @@ export default function Dropdown(props) {
                     backgroundColor: '#25333c',
                     borderRadius: 0,
                 }),
+                valueContainer: styles => ({
+                    ...styles,
+                    height: '100%'
+                }),
                 option: (styles, { isSelected }) => {
                     return {
                         ...styles,

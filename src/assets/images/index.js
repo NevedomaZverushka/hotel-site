@@ -1,4 +1,5 @@
 import profile from './icons/profile.png';
+
 import bathtub from './icons/bathtub.svg';
 import bed from './icons/bed-3.svg';
 import man from './icons/man.svg';
@@ -11,6 +12,7 @@ import arrowLeft from './icons/chevron-left.svg';
 import arrowRight from './icons/chevron-right.svg';
 import banner from './icons/banner.png';
 import heart from './icons/heart.svg';
+import shower from './icons/shower.svg';
 
 import facebook from './social/facebook.svg';
 import google from './social/google.svg';
@@ -19,11 +21,17 @@ import twitter from './social/twitter.svg';
 
 import firstFloor from './1-floor.png';
 import secondFloor from './2-floor.png';
+
 import map from './map.png';
-import logo from './logo.png';
 import header from './header.png';
 
-const icons = { bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowRight, heart};
+import firstSlider from './slider-1.png';
+import secondSlider from './slider-2.png';
+import thirdSlider from './slider-3.png';
+
+import logo from './logo.png';
+
+const icons = { bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowRight, heart, shower};
 const social = { facebook, google, instagram, twitter };
 
 export {
@@ -32,5 +40,6 @@ export {
     firstFloor, secondFloor,
     banner, map, header,
     social,
-    logo
+    logo,
+    firstSlider, secondSlider, thirdSlider
 };

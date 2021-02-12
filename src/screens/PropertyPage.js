@@ -11,10 +11,6 @@ export default function PropertyPage() {
             </div>
 
             <Map />
-
-            <div className="container_2" style={{ gap: '1rem', padding: '0 2rem', marginBottom: '5rem' }}>
-                <MoreInformationForm/>
-            </div>
         </div>
     )
 }
