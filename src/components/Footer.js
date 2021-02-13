@@ -59,6 +59,7 @@ export default function Footer() {
         <div className="footer">
             <div className="block">
                 <Dropdown
+                    containerStyle={{ marginBottom: "1rem" }}
                     items={languageOptions}
                     item={language}
                     setItem={setLanguage}

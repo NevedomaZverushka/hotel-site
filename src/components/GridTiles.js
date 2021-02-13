@@ -44,14 +44,15 @@ const housesList = [
 
 export default function GridTiles() {
     return(
-        <>
+        <React.Fragment>
             <div className="row grid_header">
-                <div>
-                    <h3 className="row"><div>Paris</div>, France</h3>
+                <div style={{ flex: 2 }}>
+                    <h3 className="row"><div>Paris,</div> France</h3>
+                    <h4>we find <b>24</b> villas for you</h4>
                 </div>
-                <div className="row">
+                <div className="row sort_block">
                     <span>Sort by:</span>
-                    <Dropdown items={languageOptions} />
+                    <Dropdown items={languageOptions} darkmode={false} containerStyle={{ width: "10rem" }} />
                 </div>
             </div>
             <div className="row" style={{ gap: "2rem", width: "100%" }}>
@@ -65,6 +66,6 @@ export default function GridTiles() {
                 <span>...</span>
                 <img src={icons.arrowRight} />
             </div>
-        </>
+        </React.Fragment>
     );
 }
