@@ -1,5 +1,5 @@
 import React from 'react';
-import { Banner, Map, Tiles } from "../components";
+import { Banner, Map, PropertyTiles } from "../components";
 
 export default function PropertyPage() {
     return(
@@ -7,7 +7,7 @@ export default function PropertyPage() {
             <Banner />
 
             <div className="container">
-                <Tiles />
+                <PropertyTiles />
             </div>
 
             <Map />

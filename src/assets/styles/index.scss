@@ -12,8 +12,11 @@
 @import 'components/Carousel';
 @import 'components/Slide';
 @import 'components/Calendar';
+@import 'components/GridTiles';
+@import 'components/HousePreview';
 
 @import 'screens/PropertyPage';
+@import 'screens/GridPage.scss';
 
 html {
   size: 16px;

@@ -1,0 +1,23 @@
+@import 'src/assets/styles/colors';
+
+.grid_header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  h3 {
+    font-family: "Lato-Light", serif;
+
+    div {
+      text-transform: uppercase;
+    }
+  }
+}
+.paginator {
+  gap: 0.2rem;
+  align-items: center;
+
+  .current {
+    font-family: "Lato-Bold", serif;
+  }
+}

@@ -15,6 +15,7 @@ import arrowRightLight from './icons/chevron-right-light.svg';
 import banner from './icons/banner.png';
 import heart from './icons/heart.svg';
 import heartLight from './icons/heart-light.svg';
+import heartOutline from './icons/heart-outline.svg';
 import shower from './icons/shower.svg';
 
 import facebook from './social/facebook.svg';
@@ -34,8 +35,14 @@ import thirdSlider from './slider-3.png';
 
 import logo from './logo.png';
 
-const icons = { bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowLeftLight, arrowRightLight, arrowRight, heart, heartLight, shower};
+import house_1 from './houses/1.png';
+
+const icons = {
+    bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowLeftLight, arrowRightLight, arrowRight,
+    heart, heartLight, heartOutline, shower
+};
 const social = { facebook, google, instagram, twitter };
+const houses = { house_1 };
 
 export {
     profile,
@@ -44,5 +51,6 @@ export {
     banner, map, header,
     social,
     logo,
-    firstSlider, secondSlider, thirdSlider
+    firstSlider, secondSlider, thirdSlider,
+    houses
 };

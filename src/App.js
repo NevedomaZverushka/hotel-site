@@ -1,5 +1,6 @@
 import React from 'react';
 import PropertyPage from './screens/PropertyPage';
+import GridPage from "./screens/GridPage";
 import {Footer, Header, MoreInformationForm, Carousel} from './components';
 import { firstSlider, secondSlider, thirdSlider } from './assets/images';
 
@@ -44,7 +45,7 @@ function App() {
         <React.Fragment>
             <Header/>
 
-            <PropertyPage />
+            <GridPage />
 
             <Carousel data={sliders} />
             <MoreInformationForm/>

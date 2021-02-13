@@ -33,7 +33,7 @@ const availability = [
     { id: 4, color: '#ade1e5', label: 'Special offer' },
 ];
 
-export default function Tiles() {
+export default function PropertyTiles() {
     return(
         <React.Fragment>
             <Card style={{ flex: 2, flexBasis: '20rem' }}>
