@@ -19,9 +19,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 
     .row {
       align-items: center;
+      justify-content: center;
       gap: 1rem;
 
       h3 {
@@ -29,6 +31,7 @@
         color: $light-grey;
         font-family: "Lato-Light", serif;
         text-transform: uppercase;
+        text-align: center;
       }
     }
     a {
