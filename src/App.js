@@ -1,7 +1,11 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 import PropertyPage from './screens/PropertyPage';
 import GridPage from "./screens/GridPage";
+
 import {Footer, Header, MoreInformationForm, Carousel} from './components';
+
 import { firstSlider, secondSlider, thirdSlider } from './assets/images';
 
 const sliders = [
@@ -42,15 +46,18 @@ const sliders = [
 
 function App() {
     return (
-        <React.Fragment>
+        <BrowserRouter>
             <Header/>
 
-            <GridPage />
+            <Switch>
+                <Route path="/" component={PropertyPage} exact />
+                <Route path="/grid" component={GridPage} exact />
+            </Switch>
 
             <Carousel data={sliders} />
             <MoreInformationForm/>
             <Footer />
-        </React.Fragment>
+        </BrowserRouter>
     );
 }
 
