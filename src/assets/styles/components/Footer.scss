@@ -22,13 +22,16 @@
     gap: 0.6rem;
     flex-basis: 7rem;
 
+    &:last-child {
+      flex: 1 100%;
+      align-items: center;
+      gap: 1rem;
+    }
+
     span {
       color: $light-grey;
       flex: 1;
       text-align: right;
-    }
-    .bold {
-      font-weight: bold;
     }
     .icon {
       width: 20px;
@@ -43,10 +46,5 @@
       font-family: "Lato-Light", serif;
       text-transform: uppercase;
     }
-  }
-  .block:last-child {
-    flex: 1 100%;
-    align-items: center;
-    gap: 1rem;
   }
 }

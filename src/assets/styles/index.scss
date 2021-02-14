@@ -14,6 +14,9 @@
 @import 'components/Calendar';
 @import 'components/GridTiles';
 @import 'components/HousePreview';
+@import 'components/Filters';
+@import 'components/Input';
+@import 'components/Switch';
 
 @import 'screens/PropertyPage';
 @import 'screens/GridPage.scss';
@@ -84,6 +87,8 @@ button {
   flex: 1;
   font-size: 1.125rem;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 a {
   color: $light-grey;

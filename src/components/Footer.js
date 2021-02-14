@@ -87,9 +87,9 @@ export default function Footer() {
                 {menu.map(({ id, title, href }) => <a key={id} href={href}>{title}</a>)}
             </div>
             <div className="block column" style={{ gap: '1rem' }}>
-                <span className="bold">+0 123 456 789</span>
+                <span><b>+0 123 456 789</b></span>
                 <span>mail@mail.com</span>
-                <div className="row" style={{ justifyContent: 'space-between', flex: 1 }}>
+                <div className="row" style={{ justifyContent: 'flex-end', flex: 1, gap: "1rem" }}>
                     {media.map(({ id, image, href }) => {
                         return(
                             <a className="icon" key={id} href={href} style={{ backgroundImage: `url(${image})` }} />

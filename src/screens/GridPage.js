@@ -1,10 +1,13 @@
 import React from 'react';
-import { GridTiles } from "../components";
+import { GridTiles, Filter } from "../components";
 
 export default function GridPage() {
     return(
-        <div className="page">
-            <GridTiles />
-        </div>
+        <React.Fragment>
+            <Filter />
+            <div className="grid_page">
+                <GridTiles />
+            </div>
+        </React.Fragment>
     )
 }

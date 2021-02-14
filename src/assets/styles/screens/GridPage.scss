@@ -1,12 +1,12 @@
 @import 'src/assets/styles/colors';
 
 @media screen and (max-device-width: 425px) {
-  .page {
+  .grid_page {
     padding: 2rem 10% !important;
   }
 }
 
-.page {
+.grid_page {
   display: flex;
   flex-direction: column;
   align-items: center;

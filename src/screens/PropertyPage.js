@@ -3,7 +3,7 @@ import { Banner, Map, PropertyTiles } from "../components";
 
 export default function PropertyPage() {
     return(
-        <div className="page">
+        <div className="property_page">
             <Banner />
 
             <div className="container">

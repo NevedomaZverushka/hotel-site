@@ -40,7 +40,7 @@ export default function Carousel(props) {
     const settings = React.useMemo(() => {
         let slidesToShow = 3;
 
-        if (width <= 1200 && width >= 850) slidesToShow = 2;
+        if (width <= 1280 && width >= 850) slidesToShow = 2;
         if (width < 850) slidesToShow = 1;
 
         return(

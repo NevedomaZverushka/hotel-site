@@ -1,0 +1,36 @@
+@import 'src/assets/styles/colors';
+
+@media screen and (max-device-width: 425px) {
+  .filters {
+    padding: 1rem 10% !important;
+  }
+}
+
+.filters {
+  background-color: $light-grey;
+  padding: 1rem 20%;
+  gap: 1rem;
+  align-items: stretch;
+
+  .row {
+    justify-content: space-between;
+    gap: 3rem;
+
+    .inputs {
+      display: flex;
+      gap: 0.2rem;
+      flex-wrap: nowrap;
+    }
+  }
+  span {
+    display: flex;
+    justify-content: flex-end;
+    color: $blue;
+  }
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 15px 11px 6px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 15px 11px 6px rgba(0, 0, 0, 1);
+  box-shadow: 0px 15px 11px 6px rgba(0, 0, 0, 1);
+}

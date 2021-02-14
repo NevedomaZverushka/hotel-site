@@ -30,6 +30,9 @@ export default function Dropdown(props) {
                 return {
                     ...styles,
                     backgroundColor: isSelected ? '#1e4f60' : '',
+                    '& h3': {
+                        color: !darkmode ? (isSelected ? "#efefef" : "#555") : "",
+                    },
                     height: '3rem',
                 };
             },
