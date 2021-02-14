@@ -63,11 +63,13 @@ export default function Footer() {
                     items={languageOptions}
                     item={language}
                     setItem={setLanguage}
+                    optionStyle={{ height: "2.7rem" }}
                 />
                 <Dropdown
                     items={languageOptions}
                     item={language}
                     setItem={setLanguage}
+                    optionStyle={{ height: "2.7rem" }}
                 />
             </div>
             {categories.map(({ id, links }) => {

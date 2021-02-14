@@ -1,4 +1,4 @@
-import profile from './icons/profile.png';
+import profile from './profile.png';
 
 import bathtub from './icons/bathtub.svg';
 import bed from './icons/bed-3.svg';
@@ -17,6 +17,8 @@ import heart from './icons/heart.svg';
 import heartLight from './icons/heart-light.svg';
 import heartOutline from './icons/heart-outline.svg';
 import shower from './icons/shower.svg';
+import calendar from './icons/calendar-range.svg';
+import plus from './icons/plus.svg';
 
 import facebook from './social/facebook.svg';
 import google from './social/google.svg';
@@ -39,7 +41,7 @@ import house_1 from './houses/1.png';
 
 const icons = {
     bathtub, bed, man, parking, smoking, wifi, star, fillStar, arrowLeft, arrowLeftLight, arrowRightLight, arrowRight,
-    heart, heartLight, heartOutline, shower
+    heart, heartLight, heartOutline, shower, calendar, plus
 };
 const social = { facebook, google, instagram, twitter };
 const houses = { house_1 };

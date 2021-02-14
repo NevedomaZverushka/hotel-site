@@ -3,7 +3,8 @@
 .switch {
   display: flex;
   gap: 0.5rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex: 1;
 
   button {
     text-transform: none;
@@ -14,10 +15,9 @@
     font-size: 1rem;
     display: flex;
     flex: 1;
-
-    &:last-child {
-      background: $grey;
-      color: $white;
-    }
+  }
+  .selected {
+    background: $grey;
+    color: $white;
   }
 }

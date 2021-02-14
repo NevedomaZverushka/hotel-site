@@ -1,36 +1,64 @@
 @import 'src/assets/styles/colors';
 
 @media screen and (max-device-width: 425px) {
-  .filters {
+  .filters, .all_filters {
     padding: 1rem 10% !important;
   }
+  .all_filters {
+    width: 80% !important;
+  }
+}
+
+.all_filters, .filters {
+  padding: 1rem 20%;
 }
 
 .filters {
   background-color: $light-grey;
-  padding: 1rem 20%;
   gap: 1rem;
   align-items: stretch;
+  position: relative;
+  z-index: 1;
 
   .row {
     justify-content: space-between;
-    gap: 3rem;
+    gap: 1.5rem;
 
     .inputs {
       display: flex;
       gap: 0.2rem;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
     }
   }
   span {
     display: flex;
     justify-content: flex-end;
     color: $blue;
+    cursor: pointer;
   }
 }
 
 .shadow {
-  -webkit-box-shadow: 0px 15px 11px 6px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 15px 11px 6px rgba(0, 0, 0, 1);
-  box-shadow: 0px 15px 11px 6px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0 10px 11px 6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 10px 11px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 11px 6px rgba(0, 0, 0, 0.1);
+}
+
+.all_filters {
+  width: 60%;
+  position: absolute;
+  background-color: $light-grey;
+  z-index: 10;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: column;
+
+  span {
+    display: flex;
+    justify-content: flex-end;
+    color: $blue;
+    cursor: pointer;
+  }
 }

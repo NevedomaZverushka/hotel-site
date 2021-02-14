@@ -2,7 +2,7 @@ import React from 'react';
 import Select from 'react-select';
 
 export default function Dropdown(props) {
-    const { placeholder, items, item, setItem, darkmode = true, containerStyle } = props;
+    const { placeholder, items, item, setItem = () => {}, darkmode = true, containerStyle, optionStyle } = props;
     const [styles, setStyles] = React.useState({});
 
     React.useEffect(() => {
@@ -49,11 +49,17 @@ export default function Dropdown(props) {
             components={{
                 IndicatorSeparator: () => null,
                 Placeholder: () => (
-                    <h3 style={{ fontSize: "1.125rem", color: !darkmode ? "#555 !important" : "" }}>{placeholder}</h3>
+                    <h3 style={{ fontSize: "1.125rem", color: !darkmode ? "#555 !important" : "", ...optionStyle }}>
+                        {placeholder}
+                    </h3>
                 )
             }}
             formatOptionLabel={
-                ({ label }) => (<h3 style={{ fontSize: "1.125rem", height: "2.7rem", color: !darkmode ? "#555 !important" : "" }}>{label}</h3>)
+                ({ label }) => (
+                    <h3 style={{ fontSize: "1.125rem", color: !darkmode ? "#555 !important" : "", ...optionStyle }}>
+                        {label}
+                    </h3>
+                )
             }
             options={items}
             defaultValue={items[0]}

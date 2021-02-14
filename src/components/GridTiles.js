@@ -2,10 +2,10 @@ import React from 'react';
 import {HousePreview, Dropdown} from "./index";
 import {houses, icons} from "../assets/images";
 
-const languageOptions = [
-    { value: 'eng', label: 'eng' },
-    { value: 'rus', label: 'rus' },
-    { value: 'ukr', label: 'ukr' },
+const options = [
+    { value: 'Default1', label: 'Default1' },
+    { value: 'Default2', label: 'Default2' },
+    { value: 'Default3', label: 'Default3' },
 ];
 const housesList = [
     {
@@ -52,7 +52,13 @@ export default function GridTiles() {
                 </div>
                 <div className="row sort_block">
                     <span>Sort by:</span>
-                    <Dropdown items={languageOptions} darkmode={false} containerStyle={{ width: "10rem" }} />
+                    <Dropdown
+                        items={options}
+                        darkmode={false}
+                        containerStyle={{ width: "10rem" }}
+                        placeholder={"Default"}
+                        optionStyle={{ height: "2rem", fontSize: "1rem" }}
+                    />
                 </div>
             </div>
             <div className="row" style={{ gap: "2rem", width: "100%" }}>
